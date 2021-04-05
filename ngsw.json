@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1617623860320,
+  "timestamp": 1617624810193,
   "index": "https://hanskerkhof.github.io/zappa-app-ng/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://hanskerkhof.github.io/zappa-app-ng/favicon.ico",
         "https://hanskerkhof.github.io/zappa-app-ng/index.html",
-        "https://hanskerkhof.github.io/zappa-app-ng/main.205a1e4ea9eca860f19a.js",
+        "https://hanskerkhof.github.io/zappa-app-ng/main.2326ea481aa3e24a0e53.js",
         "https://hanskerkhof.github.io/zappa-app-ng/manifest.webmanifest",
         "https://hanskerkhof.github.io/zappa-app-ng/polyfills.00096ed7d93ed26ee6df.js",
         "https://hanskerkhof.github.io/zappa-app-ng/runtime.7b63b9fd40098a2e8207.js",
@@ -212,8 +212,8 @@
     "https://hanskerkhof.github.io/zappa-app-ng/fontawesome-webfont.8b43027f47b20503057d.eot": "d980c2ce873dc43af460d4d572d441304499f400",
     "https://hanskerkhof.github.io/zappa-app-ng/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "https://hanskerkhof.github.io/zappa-app-ng/fontawesome-webfont.f691f37e57f04c152e23.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "https://hanskerkhof.github.io/zappa-app-ng/index.html": "9931b4f7afb1c5c2cb23e6e6625bb08aaf4b476b",
-    "https://hanskerkhof.github.io/zappa-app-ng/main.205a1e4ea9eca860f19a.js": "26b9774e175b23ff8964526c581eda1c862e5264",
+    "https://hanskerkhof.github.io/zappa-app-ng/index.html": "2df77b21904c7ece5f76f1572cc9e0f54c7838ef",
+    "https://hanskerkhof.github.io/zappa-app-ng/main.2326ea481aa3e24a0e53.js": "79333c13ea810c47e49703c3b7f7903c766bfd39",
     "https://hanskerkhof.github.io/zappa-app-ng/manifest.webmanifest": "07bdaa69eb818a4091e0ff8ba93326579dced4a1",
     "https://hanskerkhof.github.io/zappa-app-ng/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
     "https://hanskerkhof.github.io/zappa-app-ng/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
