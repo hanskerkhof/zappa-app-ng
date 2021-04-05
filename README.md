@@ -1,4 +1,4 @@
-# ZappaAppng
+# Frank Zappa App
 
 NOTES:
 
@@ -9,22 +9,34 @@ https://developer.spotify.com/console/get-album-tracks/
     ng add angular-cli-ghpages
 
 
+Running [demo](https://hanskerkhof.github.io/zappa-app-ng)
+
 This project was created with:
 - [angular](https://github.com/angular/angular)
 - [angular-cli](https://github.com/angular/angular-cli)
-- angular-pwa
 
 ### Libs
-- ng-lazyload-image
-- angular2-uuid
+- [ng-lazyload-image](https://github.com/tjoskar/ng-lazyload-image)
 
 ### Devtools
-- angular-cli-ghpages
+- [angular-cli-ghpages](https://github.com/angular-schule/angular-cli-ghpages)
 
 ### Styling
-- [milligram](https://milligram.github.io/) a minimalistic css framework
-- font-awesome
+- [milligram](https://milligram.github.io/) a minimalistic CSS framework
+- [font-awesome](https://github.com/FortAwesome/Font-Awesome)
 
+To run:
+
+    git clone git@github.com:hanskerkhof/zappa-app-ng.git
+    cd zappa-app-ng
+    npm i
+    npm run start
+
+    Navigate to `http://localhost:4200/`
+
+
+
+--------------
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
 
