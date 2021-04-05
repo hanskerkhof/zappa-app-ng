@@ -4,4 +4,20 @@ orbs:
 workflows:
   node-tests:
     jobs:
-      - node/test
+#      - node/test
+
+      - node/lint
+
+      - node/build
+
+#      - run:
+#          name: angular-lint
+#          command: npm run lint
+
+#      - run:
+#          name: angular-build
+#          command: npm run build
+
+#      - run:
+#            name: deploy
+#            command: npm run deploy
