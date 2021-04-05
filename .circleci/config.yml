@@ -11,18 +11,26 @@ jobs:
     steps:
       - checkout
 
-#      - run:
-#          name: bump package version
-#          command: |
-#            npm --no-git-tag-version version patch -m "Bumped version number to %s [ci skip]"
-#            git push origin master
-#      #            git push --tags
+      #      - run:
+      #          name: bump package version
+      #          command: |
+      #            npm --no-git-tag-version version patch -m "Bumped version number to %s [ci skip]"
+      #            git push origin master
+      #      #            git push --tags
 
-      - restore_cache:
-          - node-dependency-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
-          - node-dependency-cache--{{ .Branch }}-
-          - node-dependency-cache--
-          # key: dependency-cache-{{ checksum "package-lock.json" }}
+    - restore_cache:
+        keys:
+          # when lock file changes, use increasingly general patterns to restore cache
+          - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          - node-v1-{{ .Branch }}-
+          - node-v1-
+
+#      - restore_cache:
+#        keys:
+#          - node-dependency-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
+#          - node-dependency-cache--{{ .Branch }}-
+#          - node-dependency-cache--
+#          # key: dependency-cache-{{ checksum "package-lock.json" }}
 
       - run:
           name: install-dependencies
