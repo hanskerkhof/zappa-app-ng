@@ -1,9 +1,29 @@
 # ZappaAppNg11
 
+NOTES:
+
+https://developer.spotify.com/console/get-album/
+
+https://developer.spotify.com/console/get-album-tracks/
+
+    ng add angular-cli-ghpages
 
 
-https://medium.com/tech-insights/how-to-deploy-angular-apps-to-github-pages-gh-pages-896c4e10f9b4
+This project was created with:
+- [angular](https://github.com/angular/angular)
+- [angular-cli](https://github.com/angular/angular-cli)
+- angular-pwa
 
+### Libs
+- ng-lazyload-image
+- angular2-uuid
+
+### Devtools
+- angular-cli-ghpages
+
+### Styling
+- [milligram](https://milligram.github.io/) a minimalistic css framework
+- font-awesome
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
