@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy-gh-pages-only": "npm --no-git-tag-version version patch && ng build --configuration=staging --base-href=https://hanskerkhof.github.io/zappa-app-ng11/ && ng deploy --no-build --no-silent --name='CI/CD' --email='info@netmatic.nl' --message='deploy-gh-pages [skip ci]\n\nSkip this commit on CircleCi' && npm version"
+    "deploy": "ng deploy"
   },
   "private": true,
   "dependencies": {

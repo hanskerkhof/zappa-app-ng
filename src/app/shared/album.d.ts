@@ -1,14 +1,15 @@
-/* tslint:disable:no-string-literal */
-import { UUID } from 'angular2-uuid';
+// import { UUID } from 'angular2-uuid';
+
+export interface IAlbumSource {
+  [key: string]: IAlbum;
+}
 
 export interface IAlbum {
-    $key?: string;
-    name: string;
-    year: number;
-    owned: boolean;
-    spotifyAlbumId: string;
-    uuid: string;
-    // createdAt: number;
+  name: string;
+  year: number;
+  owned: boolean;
+  spotifyAlbumId?: string;
+  uuid: string;
 }
 
 // export class Album implements IAlbum {

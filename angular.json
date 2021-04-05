@@ -129,6 +129,14 @@
               "devServerTarget": "zappa-app-ng11:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "https://hanskerkhof.github.io/zappa-app-ng/",
+            "name": "zappa-app-ng",
+            "email": "hans@netmatic.nl"
+          }
         }
       }
     }

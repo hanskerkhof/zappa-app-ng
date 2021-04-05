@@ -5,6 +5,7 @@
       <a [class.active]="displayMode == 'list'" href="#" (click)="setDisplayMode('list')">
         <i class="fa fa-th-list fa-2x"></i>
       </a>
+      &nbsp;
       <a [class.active]="displayMode == 'grid'" href="#" (click)="setDisplayMode('grid')">
         <i class="fa fa-camera-retro fa-2x"></i>
       </a>
@@ -34,13 +35,7 @@
     <!--  <div *ngIf="(albums$ | async)?.length===0">No albums found.</div>-->
 
     <div *ngIf="displayMode == 'list'">
-
-      <!--    <div *ngFor="let album of albums$ | async; index as i">-->
-      <!--      <pre>{{i}}. {{album | json}}</pre>-->
-      <!--    </div>-->
-
       <table>
-        <!--    <table *ngIf="(albums$ | async)?.length>0">-->
         <thead>
         <tr>
           <th></th>
@@ -54,14 +49,16 @@
         <tr *ngFor="let album of albums$ | async">
 
           <td>
-            <img width="70" height="70"
+            <img style="width: 70px; height: 70px;"
                  [src]="'assets/img/default-cover.jpg'"
                  [lazyLoad]="'assets/img/covers/'+album.uuid+'.jpg'">
           </td>
 
           <td>{{album.name}}</td>
           <td>{{album.year}}</td>
-          <td>{{album.owned}}</td>
+          <td>
+            <i [ngClass]="{'fa fa-check-square-o fa-2x': album.owned}"></i>
+          </td>
 
           <td>
             <h5 *ngIf="album.spotifyAlbumId">
