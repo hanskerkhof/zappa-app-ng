@@ -1,6 +1,6 @@
 {
   "name": "zappa-app-ng11",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -24,6 +24,7 @@
     "@angular/service-worker": "~11.2.8",
     "angular2-uuid": "^1.1.1",
     "font-awesome": "^4.7.0",
+    "luxon-angular": "^3.0.0",
     "milligram": "^1.4.1",
     "milligram-scss": "^1.4.1",
     "ng-lazyload-image": "^9.1.0",

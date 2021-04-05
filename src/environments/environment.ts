@@ -5,7 +5,9 @@ declare var require: any;
 
 export const environment = {
   production: false,
-  appVersion: require('../../package.json').version
+  appVersion: require('../../package.json').version,
+  releaseDate: new Date().getTime(),
+  releaseDateString: new Date()
 };
 
 /*
