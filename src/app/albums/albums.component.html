@@ -14,26 +14,14 @@
   </div>
 
   <main>
-    <!--  <div class="app-main">-->
-    <!--<pre>{{albums$ | async | keyvalue}}</pre>-->
-    <!--  LIST:<br>-->
-    <!--  <div *ngFor="let album of albums$ | async | keyvalue; index as i">-->
-    <!--    <pre>{{i}}. {{album | json}}</pre>-->
-    <!--  </div>-->
-
     <div *ngIf="displayMode == 'grid'">
       <div class="album-grid-item" *ngFor="let album of albums$ | async">
         <img [defaultImage]="'assets/img/default-cover.jpg'"
              [lazyLoad]="'assets/img/covers/'+album.uuid+'.jpg'">
-
-        <!--<img src="assets/img/covers/{{album.uuid}}.jpg">-->
         <div *ngIf="album.owned" class="owned"><i class="fa fa-check-square-o fa-2x"></i></div>
         <div class="year">{{album.year}}</div>
       </div>
     </div>
-
-    <!--  <pre>{{(albums$ | async).length}}</pre>-->
-    <!--  <div *ngIf="(albums$ | async)?.length===0">No albums found.</div>-->
 
     <div *ngIf="displayMode == 'list'">
       <table>
