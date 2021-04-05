@@ -1,4 +1,4 @@
-version: 2.1
+version: 2
 jobs:
   build:
     working_directory: ~/repo
@@ -6,7 +6,6 @@ jobs:
       ignore:
         - gh-pages
     docker:
-      #      - image: hanskerkhof/ubuntu-node-awscli:1.2
       - image: cimg/node:15.11.0
     steps:
       - checkout
