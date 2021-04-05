@@ -1,4 +1,4 @@
-version: 2
+version: 2.1
 jobs:
   build:
     working_directory: ~/repo
@@ -11,26 +11,12 @@ jobs:
     steps:
       - checkout
 
-      #      - run:
-      #          name: bump package version
-      #          command: |
-      #            npm --no-git-tag-version version patch -m "Bumped version number to %s [ci skip]"
-      #            git push origin master
-      #      #            git push --tags
-
       - restore_cache:
           keys:
             # when lock file changes, use increasingly general patterns to restore cache
-            - node-v1-{{ .Branch }}-{{ checksum "package-lock.json" }}
-            - node-v1-{{ .Branch }}-
-            - node-v1-
-
-#      - restore_cache:
-#        keys:
-#          - node-dependency-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
-#          - node-dependency-cache--{{ .Branch }}-
-#          - node-dependency-cache--
-#          # key: dependency-cache-{{ checksum "package-lock.json" }}
+            - node-dependency-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
+            - node-dependency-cache-{{ .Branch }}-
+            - node-dependency-cache-
 
       - run:
           name: install-dependencies
@@ -48,25 +34,3 @@ jobs:
       - run:
           name: build
           command: npm run build
-
-      - run:
-          name: deploy
-          command: yarn run deploy
-
-
-#      - run:
-#          name: angular-build
-#          command: |
-#            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-#              node version.js && node_modules/\@angular/cli/bin/ng build --no-progress --prod
-#            else
-#              node version.js && node_modules/\@angular/cli/bin/ng build --prod --no-progress --base-href=/${CIRCLE_BRANCH}/
-#            fi
-#      - run:
-#          name: deploy-s3.sh
-#          command: |
-#             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-#               sh ./deploy-s3.sh
-#             else
-#               sh ./deploy-s3.sh ${CIRCLE_BRANCH}
-#             fi
