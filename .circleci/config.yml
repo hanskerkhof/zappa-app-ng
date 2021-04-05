@@ -10,6 +10,14 @@ jobs:
       - image: cimg/node:15.11.0
     steps:
       - checkout
+
+      - run:
+          name: bump package version
+          command: |
+            npm --no-git-tag-version version patch -m "Bumped version number to %s [ci skip]"
+            git push origin master
+      #            git push --tags
+
       - restore_cache:
           key: dependency-cache-{{ checksum "package-lock.json" }}
 
@@ -29,13 +37,6 @@ jobs:
       - run:
           name: build
           command: npm run build
-
-      - run:
-          name: bump package version
-          command: |
-            npm version prerelease --no-git-tag-version version patch -m "Bumped version number to %s [ci skip]"
-            git push origin master
-#            git push --tags
 
       - run:
           name: deploy
