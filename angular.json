@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "zappa-app-ng11": {
+    "zappa-app-ng": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/zappa-app-ng11",
+            "outputPath": "dist/zappa-app-ng",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,18 +72,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "zappa-app-ng11:build"
+            "browserTarget": "zappa-app-ng:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "zappa-app-ng11:build:production"
+              "browserTarget": "zappa-app-ng:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "zappa-app-ng11:build"
+            "browserTarget": "zappa-app-ng:build"
           }
         },
         "test": {
@@ -122,11 +122,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "zappa-app-ng11:serve"
+            "devServerTarget": "zappa-app-ng:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "zappa-app-ng11:serve:production"
+              "devServerTarget": "zappa-app-ng:serve:production"
             }
           }
         },
@@ -141,5 +141,5 @@
       }
     }
   },
-  "defaultProject": "zappa-app-ng11"
+  "defaultProject": "zappa-app-ng"
 }
