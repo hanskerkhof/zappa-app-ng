@@ -11,15 +11,18 @@ jobs:
     steps:
       - checkout
 
-      - run:
-          name: bump package version
-          command: |
-            npm --no-git-tag-version version patch -m "Bumped version number to %s [ci skip]"
-            git push origin master
-      #            git push --tags
+#      - run:
+#          name: bump package version
+#          command: |
+#            npm --no-git-tag-version version patch -m "Bumped version number to %s [ci skip]"
+#            git push origin master
+#      #            git push --tags
 
       - restore_cache:
-          key: dependency-cache-{{ checksum "package-lock.json" }}
+          - node-dependency-cache-{{ .Branch }}-{{ checksum "package-lock.json" }}
+          - node-dependency-cache--{{ .Branch }}-
+          - node-dependency-cache--
+          # key: dependency-cache-{{ checksum "package-lock.json" }}
 
       - run:
           name: install-dependencies
