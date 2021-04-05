@@ -9,6 +9,11 @@ https://developer.spotify.com/console/get-album-tracks/
     ng add angular-cli-ghpages
 
 
+### Deploy
+
+    npm run deploy; git add .; git commit -m "[ci skip] bump version"; git push
+
+
 Running [demo](https://hanskerkhof.github.io/zappa-app-ng)
 
 This project was created with:
