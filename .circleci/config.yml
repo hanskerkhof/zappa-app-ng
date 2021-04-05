@@ -6,7 +6,7 @@ jobs:
       ignore:
         - gh-pages
     docker:
-#      - image: hanskerkhof/ubuntu-node-awscli:1.2
+      #      - image: hanskerkhof/ubuntu-node-awscli:1.2
       - image: cimg/node:15.11.0
     steps:
       - checkout
@@ -30,9 +30,17 @@ jobs:
           name: build
           command: npm run build
 
-#      - run:
-#          name: deploy
-#          command: yarn run deploy
+      - run:
+          name: bump package version
+          command: |
+            npm version prerelease --no-git-tag-version version patch -m "Bumped version number to %s [ci skip]"
+            git push origin master
+#            git push --tags
+
+      - run:
+          name: deploy
+          command: yarn run deploy
+
 
 #      - run:
 #          name: angular-build
