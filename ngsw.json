@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1617636332797,
+  "timestamp": 1629202648153,
   "index": "https://hanskerkhof.github.io/zappa-app-ng/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "https://hanskerkhof.github.io/zappa-app-ng/favicon.ico",
         "https://hanskerkhof.github.io/zappa-app-ng/index.html",
-        "https://hanskerkhof.github.io/zappa-app-ng/main.5e11b4051c8bc3770532.js",
+        "https://hanskerkhof.github.io/zappa-app-ng/main.2b2026332c99db05e0ff.js",
         "https://hanskerkhof.github.io/zappa-app-ng/manifest.webmanifest",
-        "https://hanskerkhof.github.io/zappa-app-ng/polyfills.00096ed7d93ed26ee6df.js",
-        "https://hanskerkhof.github.io/zappa-app-ng/runtime.7b63b9fd40098a2e8207.js",
-        "https://hanskerkhof.github.io/zappa-app-ng/styles.a99458f06ea45e5d41e6.css"
+        "https://hanskerkhof.github.io/zappa-app-ng/polyfills.7aeec39c455f563bcec0.js",
+        "https://hanskerkhof.github.io/zappa-app-ng/runtime.298bd0d5d976c97c38eb.js",
+        "https://hanskerkhof.github.io/zappa-app-ng/styles.fbe141a91546834974cf.css"
       ],
       "patterns": []
     },
@@ -212,12 +212,12 @@
     "https://hanskerkhof.github.io/zappa-app-ng/fontawesome-webfont.8b43027f47b20503057d.eot": "d980c2ce873dc43af460d4d572d441304499f400",
     "https://hanskerkhof.github.io/zappa-app-ng/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "https://hanskerkhof.github.io/zappa-app-ng/fontawesome-webfont.f691f37e57f04c152e23.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "https://hanskerkhof.github.io/zappa-app-ng/index.html": "2fe7986016950e9cb7055a1ed7b246c9671063d2",
-    "https://hanskerkhof.github.io/zappa-app-ng/main.5e11b4051c8bc3770532.js": "b99a1fe551cd1247e97dffa180a6eebca0ba38ff",
+    "https://hanskerkhof.github.io/zappa-app-ng/index.html": "fdfab17717c8288135a1bfed32fe47083e2cc762",
+    "https://hanskerkhof.github.io/zappa-app-ng/main.2b2026332c99db05e0ff.js": "61301459418f91d92a9485a9fa586eda05b7e0f2",
     "https://hanskerkhof.github.io/zappa-app-ng/manifest.webmanifest": "07bdaa69eb818a4091e0ff8ba93326579dced4a1",
-    "https://hanskerkhof.github.io/zappa-app-ng/polyfills.00096ed7d93ed26ee6df.js": "cfe7b0b53e96bff9ba384b4d497c08475a617d62",
-    "https://hanskerkhof.github.io/zappa-app-ng/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
-    "https://hanskerkhof.github.io/zappa-app-ng/styles.a99458f06ea45e5d41e6.css": "019fb6023cfe85e983efec7130b6222e92edb0d0"
+    "https://hanskerkhof.github.io/zappa-app-ng/polyfills.7aeec39c455f563bcec0.js": "fa71e10c5da93065069ae7627a3d517693a7f302",
+    "https://hanskerkhof.github.io/zappa-app-ng/runtime.298bd0d5d976c97c38eb.js": "9e9ce9dd711caef63606be2e25817ac97d5ef69c",
+    "https://hanskerkhof.github.io/zappa-app-ng/styles.fbe141a91546834974cf.css": "d8f180e356c23d096cb944a0d0c491344e079291"
   },
   "navigationUrls": [
     {
