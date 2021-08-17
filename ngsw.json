@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1629202648153,
+  "timestamp": 1629202933393,
   "index": "https://hanskerkhof.github.io/zappa-app-ng/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://hanskerkhof.github.io/zappa-app-ng/favicon.ico",
         "https://hanskerkhof.github.io/zappa-app-ng/index.html",
-        "https://hanskerkhof.github.io/zappa-app-ng/main.2b2026332c99db05e0ff.js",
+        "https://hanskerkhof.github.io/zappa-app-ng/main.ad1fd37081745fc8a93f.js",
         "https://hanskerkhof.github.io/zappa-app-ng/manifest.webmanifest",
         "https://hanskerkhof.github.io/zappa-app-ng/polyfills.7aeec39c455f563bcec0.js",
         "https://hanskerkhof.github.io/zappa-app-ng/runtime.298bd0d5d976c97c38eb.js",
@@ -212,8 +212,8 @@
     "https://hanskerkhof.github.io/zappa-app-ng/fontawesome-webfont.8b43027f47b20503057d.eot": "d980c2ce873dc43af460d4d572d441304499f400",
     "https://hanskerkhof.github.io/zappa-app-ng/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "https://hanskerkhof.github.io/zappa-app-ng/fontawesome-webfont.f691f37e57f04c152e23.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "https://hanskerkhof.github.io/zappa-app-ng/index.html": "fdfab17717c8288135a1bfed32fe47083e2cc762",
-    "https://hanskerkhof.github.io/zappa-app-ng/main.2b2026332c99db05e0ff.js": "61301459418f91d92a9485a9fa586eda05b7e0f2",
+    "https://hanskerkhof.github.io/zappa-app-ng/index.html": "03a7914276224a23bef4d7fb37c150e8a8a9f610",
+    "https://hanskerkhof.github.io/zappa-app-ng/main.ad1fd37081745fc8a93f.js": "d1c7d17f451b5a597375d5ea121e885534b9f858",
     "https://hanskerkhof.github.io/zappa-app-ng/manifest.webmanifest": "07bdaa69eb818a4091e0ff8ba93326579dced4a1",
     "https://hanskerkhof.github.io/zappa-app-ng/polyfills.7aeec39c455f563bcec0.js": "fa71e10c5da93065069ae7627a3d517693a7f302",
     "https://hanskerkhof.github.io/zappa-app-ng/runtime.298bd0d5d976c97c38eb.js": "9e9ce9dd711caef63606be2e25817ac97d5ef69c",
